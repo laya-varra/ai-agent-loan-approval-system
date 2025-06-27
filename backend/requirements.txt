@@ -4,4 +4,6 @@ pandas
 scikit-learn
 joblib
 flask-cors
+Pillow
+
 
