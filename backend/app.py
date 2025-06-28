@@ -16,7 +16,7 @@ load_dotenv()
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://ai-agent-loan-approval-system.vercel.app"])
 
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'pdf'}
