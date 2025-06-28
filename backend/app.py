@@ -11,8 +11,9 @@ from groq import Groq
 import joblib  # For loading ML model
 from dotenv import load_dotenv
 import pandas as pd
-# Load variables from .env file into environment
+# Load variables from .env file into environm
 load_dotenv()
+
 
 app = Flask(__name__)
 CORS(app)
@@ -224,7 +225,7 @@ class GroqSuggestionAgent(Agent):
                 prompt = "Suggest improvements for this loan application.: " + str(data)
             chat_completion = self.client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama3-70b-8192",  # <-- Updated model here!
+                model="llama3-70b-8192",  
             )
             suggestion = chat_completion.choices[0].message.content
             return {
@@ -440,6 +441,7 @@ def process_loan():
         The ML prediction is: {ml_result['prediction']}
 
         Do the two decisions agree or not? Briefly explain in 1-2 sentences.
+        and based on the two decisions whats your opinion
         DO NOT provide suggestions or recommendations."""
     )
     # Final decision logic
@@ -464,4 +466,4 @@ def groq_suggest():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)
