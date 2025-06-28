@@ -64,7 +64,7 @@ const LoanForm = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("${import.meta.env.VITE_API_URL}/predict", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

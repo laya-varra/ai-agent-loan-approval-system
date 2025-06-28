@@ -35,7 +35,7 @@ const PanVerification = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('${import.meta.env.VITE_API_URL}/extract-pan', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/extract-pan`, {
         method: 'POST',
         body: formData,
       });

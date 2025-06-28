@@ -35,7 +35,7 @@ const AadhaarVerification = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('${import.meta.env.VITE_API_URL}/extract-aadhaar', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/extract-aadhaar`, {
         method: 'POST',
         body: formData,
       });
