@@ -1,4 +1,5 @@
 Agentic AI-Based Loan Approval System
+
 This project showcases an intelligent, agent-driven loan approval system that combines machine learning, OCR, and agentic AI to automate the end-to-end loan processing workflow.
 
 Project Overview
@@ -30,9 +31,3 @@ Database: SQLite / MySQL (optional for storage)
 
 Deployment Ready: Localhost or scalable cloud deployment
 
-Access the web app at:
-
-arduino
-Copy
-Edit
-http://localhost:5000
