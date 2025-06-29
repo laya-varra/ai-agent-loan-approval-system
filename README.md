@@ -30,26 +30,6 @@ Database: SQLite / MySQL (optional for storage)
 
 Deployment Ready: Localhost or scalable cloud deployment
 
-Getting Started
-Clone the repo:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/agentic-ai-loan-approval.git
-cd agentic-ai-loan-approval
-Install required Python packages:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Flask server:
-
-bash
-Copy
-Edit
-python app.py
 Access the web app at:
 
 arduino
