@@ -27,7 +27,5 @@ Backend: Python, Flask, Scikit-learn / TensorFlow, OCR (Tesseract)
 
 Frontend: HTML5, CSS3, JavaScript
 
-Database: SQLite / MySQL (optional for storage)
-
-Deployment Ready: Localhost or scalable cloud deployment
+Deployment Ready: scalable cloud deployment
 
